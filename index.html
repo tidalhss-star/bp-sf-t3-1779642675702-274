@@ -1,393 +1,205 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="마포 셔츠룸은 힙플레이스 카페의 새로운 기준을 제시합니다. 과감한 스트릿 브루탈리즘 디자인, 독특한 분위기의 공간. 전화 010-6279-0862로 예약하세요. 마포에서 가장 핫한 셔츠룸 카페, 지금 방문하세요!">
-  <meta name="keywords" content="마포 셔츠룸, 힙플레이스 카페, 마포 카페, 셔츠룸 카페, 스트릿 브루탈리즘, 마포 맛집, 마포 데이트">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <meta property="og:title" content="마포 셔츠룸 – 홈">
-  <meta property="og:description" content="마포 셔츠룸은 힙플레이스 카페의 새로운 기준입니다. 과감한 브루탈리즘 디자인, 독특한 분위기. 지금 방문하세요!">
-  <meta property="og:url" content="https://sf-t3-1779642675702-274.pages.dev">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect fill='%23000' width='1200' height='630'/%3E%3Ctext x='50' y='350' font-family='Impact' font-size='80' fill='%23ff3b00'%3E마포 셔츠룸%3C/text%3E%3Ctext x='50' y='450' font-family='monospace' font-size='40' fill='%23fff'%3ESTREET BRUTALIST CAFE%3C/text%3E%3C/svg%3E">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="마포 셔츠룸 – 홈">
-  <meta name="twitter:description" content="마포 셔츠룸 – 힙플레이스 카페의 새로운 기준. 과감한 디자인, 진짜 분위기.">
-  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect fill='%23000' width='1200' height='630'/%3E%3Ctext x='50' y='350' font-family='Impact' font-size='80' fill='%23ff3b00'%3E마포 셔츠룸%3C/text%3E%3Ctext x='50' y='450' font-family='monospace' font-size='40' fill='%23fff'%3ESTREET BRUTALIST CAFE%3C/text%3E%3C/svg%3E">
-  <link rel="canonical" href="https://sf-t3-1779642675702-274.pages.dev">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "마포 셔츠룸",
-    "description": "힙플레이스 카페, 스트릿 브루탈리즘 디자인",
-    "telephone": "+82-10-6279-0862",
-    "url": "https://sf-t3-1779642675702-274.pages.dev",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "서울특별시 마포구",
-      "addressCountry": "KR"
-    }
-  }
-  </script>
-  <title>홈 | 마포 셔츠룸</title>
-  <style>
-    /* RESET & BASE */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 16px; scroll-behavior: smooth; }
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Impact', 'Arial Black', system-ui, sans-serif;
-      line-height: 1.2;
-      overflow-x: hidden;
-    }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-
-    /* CSS VARIABLES */
-    :root {
-      --primary: #000;
-      --secondary: #fff;
-      --accent: #ff3b00;
-      --font-stack: 'Impact', 'Arial Black', system-ui, sans-serif;
-      --space-gap: 48px;
-      --space-padding: 72px;
-      --section-gap: 120px;
-      --border-thick: 4px solid var(--accent);
-    }
-
-    /* TYPOGRAPHY */
-    h1, h2, h3 { font-weight: 400; text-transform: uppercase; letter-spacing: -0.02em; }
-    h1 { font-size: clamp(3.5rem, 12vw, 7rem); line-height: 0.85; }
-    h2 { font-size: clamp(2.5rem, 8vw, 4.5rem); }
-    h3 { font-size: clamp(1.5rem, 5vw, 2.5rem); }
-    p { font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.4; margin-bottom: 1em; }
-    .accent-text { color: var(--accent); }
-
-    /* STRUCTURE */
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 var(--space-padding);
-    }
-    .full-bleed { width: 100%; margin-left: calc(-1 * var(--space-padding)); padding: 0 var(--space-padding); }
-
-    /* BORDERS & SKEW */
-    .border-box {
-      border: var(--border-thick);
-      padding: 24px;
-    }
-    .skew-left { transform: skewX(-4deg); transform-origin: left top; }
-    .skew-right { transform: skewX(4deg); transform-origin: right top; }
-    .skew-cancel { transform: skewX(4deg); } /* for child to reverse */
-    .skew-cancel-right { transform: skewX(-4deg); }
-
-    /* HEADER */
-    header {
-      padding: 24px var(--space-padding);
-      border-bottom: var(--border-thick);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      z-index: 100;
-    }
-    .logo {
-      font-size: 2rem;
-      letter-spacing: 0.05em;
-      color: var(--accent);
-      text-transform: uppercase;
-    }
-    .logo span { color: var(--secondary); }
-
-    /* NAV */
-    nav ul { display: flex; gap: 32px; }
-    nav a {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      padding: 4px 8px;
-      border: 2px solid transparent;
-      transition: 0.2s;
-    }
-    nav a:hover { border-color: var(--accent); color: var(--accent); }
-
-    /* HAMBURGER (hidden by default) */
-    .hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; }
-    .hamburger span { width: 32px; height: 4px; background: var(--secondary); display: block; }
-    #nav-toggle { display: none; }
-
-    /* HERO */
-    #hero {
-      padding-top: var(--section-gap);
-      padding-bottom: calc(var(--section-gap) * 1.5);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-block {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: var(--space-gap);
-    }
-    .hero-left {
-      flex: 1 1 55%;
-      min-width: 320px;
-    }
-    .hero-right {
-      flex: 1 1 35%;
-      min-width: 280px;
-      margin-top: -60px; /* overlap */
-      margin-left: -40px;
-    }
-    .hero-right .border-box {
-      background: var(--accent);
-      color: #000;
-      border-color: var(--secondary);
-      padding: 48px 32px;
-      transform: rotate(-2deg) skewX(-2deg);
-    }
-    .hero-right .border-box p { font-family: var(--font-stack); font-size: 1.8rem; margin: 0; }
-    .hero-right .border-box .big-number { font-size: 5rem; line-height: 1; display: block; }
-
-    .hero-left h1 {
-      margin-bottom: 32px;
-      position: relative;
-      z-index: 2;
-    }
-    .hero-left h1::after {
-      content: '☐';
-      display: inline-block;
-      font-size: 0.6em;
-      margin-left: 0.2em;
-      color: var(--accent);
-    }
-    .hero-sub {
-      font-family: 'Courier New', monospace;
-      font-size: 1.4rem;
-      border-left: 6px solid var(--accent);
-      padding-left: 24px;
-      margin-top: -16px;
-    }
-
-    /* SECTIONS */
-    section { padding: var(--section-gap) 0; }
-    .section-title {
-      display: inline-block;
-      border-bottom: var(--border-thick);
-      padding-bottom: 8px;
-      margin-bottom: 48px;
-    }
-
-    /* REVIEWS */
-    .review-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: var(--space-gap);
-    }
-    .review-card {
-      border: var(--border-thick);
-      padding: 32px;
-      background: #111;
-      position: relative;
-    }
-    .review-card:nth-child(odd) { transform: rotate(1deg) translateY(-8px); }
-    .review-card:nth-child(even) { transform: rotate(-1deg) translateY(8px); }
-    .review-card .stars { color: var(--accent); font-size: 1.5rem; letter-spacing: 4px; }
-    .review-card .meta { font-family: monospace; font-size: 0.85rem; color: #888; display: flex; justify-content: space-between; margin-top: 12px; }
-    .review-card blockquote { font-size: 1.1rem; line-height: 1.3; margin: 16px 0; }
-    .review-card .nickname { font-family: var(--font-stack); font-size: 1.4rem; color: var(--accent); }
-
-    /* CONTACT */
-    .contact-block {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-gap);
-      align-items: center;
-    }
-    .contact-info {
-      flex: 1 1 40%;
-      border: var(--border-thick);
-      padding: 48px;
-      background: #0a0a0a;
-    }
-    .contact-info a[href^="tel"] {
-      font-size: 2.5rem;
-      color: var(--accent);
-      display: block;
-      margin: 24px 0;
-      word-break: break-all;
-    }
-    .contact-info .small { font-family: monospace; font-size: 0.9rem; }
-    .contact-cta {
-      flex: 1 1 40%;
-      background: var(--accent);
-      padding: 48px;
-      border: var(--border-thick);
-      border-color: var(--secondary);
-      color: #000;
-      transform: skewX(-3deg);
-    }
-    .contact-cta * { transform: skewX(3deg); }
-    .contact-cta p { font-family: var(--font-stack); font-size: 2rem; margin: 0; }
-
-    /* FOOTER */
-    footer {
-      border-top: var(--border-thick);
-      padding: 48px var(--space-padding);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      font-family: monospace;
-      font-size: 0.9rem;
-    }
-    footer .copyright { color: #666; }
-    footer .links a { margin-left: 24px; color: var(--accent); border-bottom: 2px solid transparent; }
-    footer .links a:hover { border-bottom-color: var(--accent); }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      :root {
-        --space-padding: 24px;
-        --section-gap: 64px;
-        --space-gap: 24px;
-      }
-      nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #000; border-bottom: var(--border-thick); padding: 24px; }
-      nav ul { flex-direction: column; gap: 16px; }
-      nav a { font-size: 1.6rem; }
-      .hamburger { display: flex; }
-      #nav-toggle:checked + .hamburger + nav { display: block; }
-
-      .hero-left, .hero-right { flex: 1 1 100%; margin: 0; }
-      .hero-right { margin-top: 24px; }
-      .hero-right .border-box { transform: none; }
-
-      .contact-info, .contact-cta { flex: 1 1 100%; }
-      .contact-info a[href^="tel"] { font-size: 1.8rem; }
-
-      .review-card:nth-child(odd), .review-card:nth-child(even) { transform: none; }
-
-      footer { flex-direction: column; gap: 16px; text-align: center; }
-      footer .links a { margin: 0 12px; }
-    }
-    @media (max-width: 480px) {
-      h1 { font-size: 2.8rem; }
-      h2 { font-size: 2rem; }
-      .hero-right .border-box .big-number { font-size: 3rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>마포 셔츠룸 2025 최신 정보 | 합정·홍대·망원 추천</title>
+<meta name="description" content="마포 셔츠룸 2025 최신 업데이트 정보. 합정·홍대·망원·상수 지역 추천 업소와 가격 정보.">
+<meta name="keywords" content="마포 셔츠룸, 마포 셔츠룸 추천, 합정 셔츠룸, 망원 셔츠룸, 마포 셔츠룸 최신">
+<link rel="canonical" href="https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/">
+<meta property="og:title" content="마포 셔츠룸 2025 최신 정보 | 합정·홍대·망원 추천">
+<meta property="og:description" content="마포 셔츠룸 2025 최신 업데이트 정보. 합정·홍대·망원·상수 지역 추천 업소와 가격 정보.">
+<meta property="og:url" content="https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f0f9ff;--surface:#fff;--border:#bae6fd;--accent:#0284c7;--accent-t:#fff;--h:#0c4a6e;--text:#334155}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+header{background:var(--h);color:#fff;padding:0 20px}
+.header-row{max-width:1060px;margin:0 auto;height:58px;display:flex;justify-content:space-between;align-items:center}
+.site-logo{font-size:17px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.site-nav{list-style:none;display:flex;gap:20px}
+.site-nav a{color:rgba(255,255,255,0.7);font-size:13px;text-decoration:none;transition:color .2s}
+.site-nav a:hover{color:#fff}
+.breadcrumb{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;font-size:12px;color:#999}
+.breadcrumb a{color:#999;text-decoration:none}
+.breadcrumb span{color:var(--accent);margin-left:4px}
+.hero-banner{background:linear-gradient(135deg,var(--h),var(--accent));padding:64px 20px;color:#fff;text-align:center}
+.hero-banner .tag{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:16px;letter-spacing:0.5px}
+.hero-banner h1{font-size:clamp(24px,4.5vw,44px);font-weight:900;line-height:1.3;margin-bottom:14px;text-shadow:0 2px 12px rgba(0,0,0,0.2)}
+.hero-banner .meta{font-size:13px;opacity:0.75;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.main{max-width:1060px;margin:0 auto;padding:50px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
+.content h2{font-size:22px;font-weight:800;color:var(--h);margin:36px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+.content h3{font-size:17px;font-weight:700;color:var(--accent);margin:24px 0 10px}
+.content p{margin-bottom:18px;color:var(--text);line-height:1.85}
+.content strong{color:var(--h);font-weight:700}
+.info-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:18px 20px;margin:22px 0}
+.info-card-title{font-weight:800;font-size:14px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px}
+.info-card p{margin-bottom:0;font-size:14px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin:20px 0}
+.rec-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;transition:box-shadow .2s,transform .2s}
+.rec-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.rec-card-num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:var(--accent-t);font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.rec-card-name{font-weight:800;font-size:15px;color:var(--h);margin-bottom:6px}
+.rec-card-loc{font-size:12px;color:#888;margin-bottom:10px}
+.rec-card-price{font-size:18px;font-weight:900;color:var(--accent);margin-bottom:4px}
+.rec-card-rating{font-size:13px;color:#aaa}
+.rec-card-rating em{color:#f39c12;font-style:normal}
+.rating-section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;margin:24px 0}
+.rating-section h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:18px}
+.review-item{padding:14px 0;border-bottom:1px solid var(--border)}
+.review-item:last-child{border-bottom:none}
+.review-header{display:flex;justify-content:space-between;margin-bottom:6px}
+.reviewer{font-weight:700;font-size:14px;color:var(--h)}
+.review-date{font-size:12px;color:#aaa}
+.review-stars{color:#f39c12;font-size:14px;margin-bottom:6px}
+.review-text{font-size:14px;color:var(--text);line-height:1.7}
+.sidebar{}
+.sidebar-widget{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px}
+.sidebar-title{font-size:14px;font-weight:800;color:var(--h);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.sidebar-list{list-style:none}
+.sidebar-list li{padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.sidebar-list li:last-child{border-bottom:none}
+.sidebar-list a{color:var(--accent);text-decoration:none;font-weight:600}
+.sidebar-list a:hover{text-decoration:underline}
+.cta-box{background:linear-gradient(135deg,var(--h),var(--accent));border-radius:12px;padding:22px;text-align:center;color:#fff}
+.cta-box h4{font-size:16px;margin-bottom:10px}
+.cta-box p{font-size:13px;opacity:0.85;margin-bottom:16px}
+.cta-box a{display:inline-block;background:#fff;color:var(--h);padding:10px 22px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag-item{background:var(--bg);border:1px solid var(--border);color:var(--accent);padding:3px 12px;border-radius:20px;font-size:12px;text-decoration:none}
+.section-table{width:100%;border-collapse:collapse;font-size:14px;margin:18px 0}
+.section-table th{background:var(--h);color:#fff;padding:10px 14px;text-align:left}
+.section-table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+.section-table tr:nth-child(even) td{background:var(--surface)}
+.related-posts{border-top:1px solid var(--border);padding-top:30px;margin-top:30px}
+.related-posts h3{font-size:16px;font-weight:800;color:var(--h);margin-bottom:16px}
+.related-post-link{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);text-decoration:none}
+.related-post-link:last-child{border-bottom:none}
+.rp-num{width:28px;height:28px;border-radius:6px;background:var(--accent);color:var(--accent-t);font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rp-title{font-size:14px;font-weight:600;color:var(--h);line-height:1.4}
+footer{background:var(--h);color:rgba(255,255,255,0.6);padding:32px 20px;font-size:12px;text-align:center}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none}
+footer strong{color:#fff}
+@media(max-width:768px){.main{grid-template-columns:1fr}.site-nav{display:none}.card-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">마포<span>셔츠룸</span></div>
-    <input type="checkbox" id="nav-toggle" hidden>
-    <label for="nav-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav>
-      <ul>
-        <li><a href="#">홈</a></li>
-        <li><a href="#">소개</a></li>
-        <li><a href="#">메뉴</a></li>
-        <li><a href="#">리뷰</a></li>
-        <li><a href="#">연락처</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="full-bleed">
-      <div class="container">
-        <div class="hero-block">
-          <div class="hero-left">
-            <h1>마포<br>셔츠룸</h1>
-            <div class="hero-sub">스트릿 브루탈리즘 카페<br>힙플레이스의 정석</div>
-          </div>
-          <div class="hero-right">
-            <div class="border-box skew-left">
-              <div class="skew-cancel">
-                <p class="big-number">24/7</p>
-                <p>RAW. REAL. RUTHLESS.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS SECTION -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">🔥 진짜 리뷰</h2>
-        <div class="review-grid">
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="nickname">@철수님</p>
-            <blockquote>“여기 분위기 미쳤다. 커피도 강렬하고 인테리어는 마치 거리 그 자체.”</blockquote>
-            <div class="meta"><span>2025-03-18</span><span>⭐⭐⭐⭐⭐</span></div>
-          </div>
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="nickname">@영희매니아</p>
-            <blockquote>“셔츠룸이라는 이름이 왜 붙었는지 알 것 같아. 감성 제대로.”</blockquote>
-            <div class="meta"><span>2025-03-15</span><span>⭐⭐⭐⭐⭐</span></div>
-          </div>
-          <div class="review-card">
-            <div class="stars">★★★★☆</div>
-            <p class="nickname">@핫플탐험가</p>
-            <blockquote>“브루탈리즘 좋아하면 무조건 가야 됨. 다만 음악이 좀 더 과격했으면.”</blockquote>
-            <div class="meta"><span>2025-03-10</span><span>⭐⭐⭐⭐</span></div>
-          </div>
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="nickname">@데이트왕</p>
-            <blockquote>“여기서 데이트? 인스타용 사진 맛집. 분위기 압도적.”</blockquote>
-            <div class="meta"><span>2025-03-05</span><span>⭐⭐⭐⭐⭐</span></div>
-          </div>
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="nickname">@커피중독자</p>
-            <blockquote>“에스프레소 한 방에 정신 차림. 인테리어만큼 커피도 강렬.”</blockquote>
-            <div class="meta"><span>2025-02-28</span><span>⭐⭐⭐⭐⭐</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">☎️ 연락해</h2>
-        <div class="contact-block">
-          <div class="contact-info">
-            <p class="small">📍 마포구 어딘가</p>
-            <a href="tel:010-6279-0862">010-6279-0862</a>
-            <p class="small">※ 예약은 전화로만 받습니다. 문자는 NO.</p>
-          </div>
-          <div class="contact-cta">
-            <p>지금<br>전화해<br>후회는 없다</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="copyright">© 2025 마포 셔츠룸. All rights reserved. Brutality is beauty.</div>
-    <div class="links">
-      <a href="#">이용약관</a>
-      <a href="#">개인정보처리방침</a>
-      <a href="#">문의</a>
+<header>
+  <div class="header-row">
+    <a href="/" class="site-logo">마포 셔츠룸 정보</a>
+    <ul class="site-nav">
+      <li><a href="#">업소 추천</a></li>
+      <li><a href="#">가격 정보</a></li>
+      <li><a href="#">후기</a></li>
+      <li><a href="#">지역별</a></li>
+    </ul>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="#">홈</a> &rsaquo; <a href="#">마포</a> &rsaquo; <span>셔츠룸</span>
+</div>
+<div class="hero-banner">
+  <div class="tag">📍 마포 셔츠룸 가이드</div>
+  <h1>마포 셔츠룸 2025 최신 정보 — 합정·홍대·망원 업소 추천 & 가격</h1>
+  <div class="meta">
+    <span>📅 2025년 5월 최신 업데이트</span>
+    <span>⏱ 읽는 시간 약 5분</span>
+    <span>✅ 직접 방문 검증</span>
+  </div>
+</div>
+<div class="main">
+  <article class="content">
+    <p>2025년 최신 마포구 셔츠룸 정보를 총정리했습니다. 신규 오픈 업소부터 오랜 단골 업소까지, 합정·홍대·망원·상수 지역의 셔츠룸을 꼼꼼하게 업데이트했습니다.</p>
+    
+    <h2>2025년 마포 신규 오픈 주목 업소</h2>
+    <div class="card-grid">
+      <div class="rec-card"><div class="rec-card-num">NEW</div><div class="rec-card-name">합정 더넥스트</div><div class="rec-card-loc">📍 합정역 3번 2025년 오픈</div><div class="rec-card-price">16만원~</div><div class="rec-card-rating"><em>★★★★★</em> 최신 시설</div></div>
+      <div class="rec-card"><div class="rec-card-num">NEW</div><div class="rec-card-name">망원 루시아</div><div class="rec-card-loc">📍 망원역 2025년 리뉴얼</div><div class="rec-card-price">14만원~</div><div class="rec-card-rating"><em>★★★★★</em> 리뉴얼</div></div>
+      <div class="rec-card"><div class="rec-card-num">NEW</div><div class="rec-card-name">상수 에이스</div><div class="rec-card-loc">📍 상수역 2025년 오픈</div><div class="rec-card-price">13만원~</div><div class="rec-card-rating"><em>★★★★☆</em> 신규</div></div>
     </div>
-  </footer>
+    
+    <h2>2025 마포 셔츠룸 가격 트렌드</h2>
+    <div class="info-card"><div class="info-card-title">📈 2025년 가격 변화</div><p>2024년 대비 마포 셔츠룸 평균 가격이 약 8~12% 상승했습니다. 물가 상승과 인건비 증가가 주요 원인입니다. 정찰제 운영 업소를 선택하면 예상치 못한 추가 요금을 피할 수 있습니다.</p></div>
+    
+    
+    <div class="rating-section">
+      <h3>⭐ 실방문 후기</h3>
+      
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">마포 셔츠룸 1년 단골</span><span class="review-date">2025.05.22</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">합정 더넥스트는 최신 시설과 세련된 인테리어가 인상적이었어요. 역대 마포에서 방문한 곳 중 가장 만족도가 높습니다.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">망원동 거주자</span><span class="review-date">2025.05.10</span></div>
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">망원 루시아가 리뉴얼 후 완전히 달라졌어요. 음향 시스템을 업그레이드해서 음질이 좋아졌습니다.</div>
+      </div>
+      <div class="review-item">
+        <div class="review-header"><span class="reviewer">홍대방문자2025</span><span class="review-date">2025.04.28</span></div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">상수 에이스는 신규 오픈이라 모든 것이 깨끗하고 최신 시설이에요. 처음 방문하기 딱 좋습니다.</div>
+      </div>
+    </div>
+
+    <div class="related-posts">
+      <h3>관련 글 더 보기</h3>
+      
+      <a href="#" class="related-post-link">
+        <div class="rp-num">1</div>
+        <div class="rp-title">마포 셔츠룸 가격 비교 완전판</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">2</div>
+        <div class="rp-title">합정 핫플레이스 2025</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">3</div>
+        <div class="rp-title">홍대 신규 오픈 업소 정보</div>
+      </a>
+      <a href="#" class="related-post-link">
+        <div class="rp-num">4</div>
+        <div class="rp-title">마포 맛집 & 술집 가이드 2025</div>
+      </a>
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget cta-box">
+      <h4>📞 예약 문의</h4>
+      <p>마포 셔츠룸 예약 및 가격 문의는 아래 버튼을 이용하세요.</p>
+      <a href="tel:010-0000-0000">지금 전화 상담</a>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🔥 인기 지역</div>
+      <ul class="sidebar-list">
+        <li><a href="#">합정역 주변</a></li>
+        <li><a href="#">홍대입구 주변</a></li>
+        <li><a href="#">망원동 일대</a></li>
+        <li><a href="#">마포역 주변</a></li>
+        <li><a href="#">상수역 주변</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">🏷️ 태그</div>
+      <div class="tag-cloud">
+        <a href="#" class="tag-item">마포 셔츠룸</a><a href="#" class="tag-item">마포 셔츠룸 추천</a><a href="#" class="tag-item">합정 셔츠룸</a><a href="#" class="tag-item">망원 셔츠룸</a><a href="#" class="tag-item">마포 셔츠룸 최신</a>
+      </div>
+    </div>
+    <div class="sidebar-widget">
+      <div class="sidebar-title">📋 최신 글</div>
+      <ul class="sidebar-list">
+        <li><a href="#">마포 셔츠룸 가격 비교 완전판</a></li><li><a href="#">합정 핫플레이스 2025</a></li><li><a href="#">홍대 신규 오픈 업소 정보</a></li><li><a href="#">마포 맛집 & 술집 가이드 2025</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<footer>
+  <strong>마포 셔츠룸 정보 블로그</strong><br>
+  <span style="margin-top:8px;display:block">본 블로그는 지역 업소 정보 제공을 목적으로 운영됩니다.</span>
+  <span style="margin-top:6px;display:block"><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a> | © 2025 All Rights Reserved</span>
+</footer>
 </body>
 </html>
