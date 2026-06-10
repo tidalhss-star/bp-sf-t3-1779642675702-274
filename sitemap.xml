@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sf-t3-1779642675702-274.pages.dev/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sf-t3-1779642675702-274.pages.dev/blog.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/blog.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sf-t3-1779642675702-274.pages.dev/feed.xml</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/posts/guide-002-apy2dc.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-274/feed.xml</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
